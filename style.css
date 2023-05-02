@@ -1,0 +1,361 @@
+/******** Colors  **********/
+:root {
+  --blue: #666ca3;
+  --black: #13183f;
+  --gray: #83869a;
+  --hotPink: #f74780;
+  --pink: #ffa7c3;
+  --white: #ffffff;
+  --orangePink: linear-gradient(to top, #f02aa6, #ff6f48);
+  --purplePink: linear-gradient(to bottom, #4851ff, #f02aa6);
+  --whiteDarkWhite: linear-gradient(to bottom, white, rgb(236, 236, 236));
+  --googleFont: "Plus Jakarta Sans", sans-serif;
+}
+
+/******  Typography *******/
+.headingXl {
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 70px;
+}
+.headingL {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 51px;
+}
+.headingM {
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 40px;
+}
+.headingS {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 28px;
+}
+.bodyM {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 28px;
+}
+
+.bodyS {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+/******** Buttons ********/
+.btn {
+  /* padding: 1.4rem 3.1rem; */
+  border-radius: 28px;
+  border: none;
+
+  font-weight: 700;
+  /* font-size: 1.8rem; */
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.btnOne {
+  background: var(--black);
+}
+
+.btnOne:hover {
+  background: var(--blue);
+}
+
+.btnTwo {
+  background: var(--orangePink);
+}
+
+.btnTwo:hover {
+  opacity: 50%;
+}
+
+.btnThree {
+  background: var(--purplePink);
+}
+
+.btnThree:hover {
+  opacity: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--googleFont);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--whiteDarkWhite);
+}
+
+header {
+  padding: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > img {
+  width: 8.9rem;
+}
+header > button {
+  padding: 0.9rem 2.4rem;
+  font-size: 1.6rem;
+}
+
+.heroSection {
+  padding: 0 1.6rem;
+}
+
+.heroSection > p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 26px;
+  color: var(--gray);
+}
+
+.heroSection > button {
+  padding: 1.5rem 3.8rem;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.imgMobile {
+  width: 100%;
+}
+
+.imgTablet {
+  display: none;
+}
+
+.imgDesktop {
+  display: none;
+}
+
+.cardSection {
+  padding: 0 1.6rem;
+}
+
+.gradientBox {
+  margin-bottom: 4rem;
+
+  padding: 2.4rem 2.8rem 3.2rem;
+  border-radius: 15px;
+
+  background: var(--orangePink);
+  color: var(--white);
+}
+
+.gradientBox > h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 32px;
+}
+
+.card {
+  margin-bottom: 4rem;
+
+  position: relative;
+
+  padding: 5.6rem 2.8rem 3.2rem;
+  border-radius: 15px;
+
+  background: var(--white);
+}
+
+.card > h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.card > p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 26px;
+}
+.card > h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 28px;
+
+  color: var(--hotPink);
+}
+
+.hoverPink {
+  cursor: pointer;
+}
+
+.hoverPink:hover {
+  color: var(--pink);
+}
+
+.card > img {
+  position: absolute;
+  top: -2.4rem;
+  left: 2.8rem;
+
+  width: 5.6rem;
+}
+
+footer {
+  margin-top: 8rem;
+  padding: 3.6rem 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--black);
+}
+
+footer > img {
+  width: 8.9rem;
+}
+footer > button {
+  padding: 0.9rem 2.4rem;
+  font-size: 1.6rem;
+}
+
+/* Continue @media TABLET */
+@media (min-width: 700px) {
+  header {
+    padding: 2.4rem 4rem;
+  }
+
+  .heroSection {
+    margin-bottom: 18.6rem;
+
+    padding: 4rem;
+    width: 60%;
+  }
+
+  .heroSection > h1 {
+    margin-bottom: 2.5rem;
+
+    font-weight: 800;
+    font-size: 4rem;
+  }
+
+  .heroSection > p {
+    margin-bottom: 2.4rem;
+
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 26px;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+
+  .imgTablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -10%);
+
+    display: block;
+    width: 64rem;
+  }
+
+  .cardSection {
+    padding: 0 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .gradientBox {
+    margin-bottom: 5.6rem;
+  }
+
+  .card {
+    margin-bottom: 5.6rem;
+  }
+
+  footer {
+    padding: 3.6rem 4rem;
+  }
+}
+
+/******** DeskTop *********/
+@media (min-width: 1400px) {
+  header {
+    padding: 2.9rem 16.5rem;
+  }
+
+  .heroSection {
+    margin-bottom: 18.6rem;
+
+    padding: 16.5rem;
+    width: 60%;
+  }
+
+  .heroSection > h1 {
+    margin-bottom: 2.9rem;
+
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 70px;
+  }
+
+  .heroSection > p {
+    margin-bottom: 4rem;
+
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+
+  .imgTablet {
+    display: none;
+  }
+
+  .imgDesktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -10%);
+
+    display: block;
+    width: 99.1rem;
+  }
+
+  .cardSection {
+    padding: 0 16.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .gradientBox {
+    margin-bottom: 8rem;
+  }
+
+  .card {
+    margin-bottom: 8rem;
+  }
+
+  footer {
+    padding: 3.6rem 16.5rem;
+  }
+}
